@@ -67,11 +67,13 @@ function NavBar() {
                 aria-label="nav tabs example"
                 role="navigation"
             >
-                <NavLink label="Home" href="#" to='/'/>
-                <NavLink label="About Me" href="./components/aboutMe.jsx" to='aboutMe'/>
-                <NavLink label="Projects" href="./components/projects.jsx" to='projects' />
-                <NavLink label="CV" href="./components/cv.jsx" />
-                <NavLink label="Contact Me" href="./components/contactMe.jsx" />
+            <nav>
+                <NavLink label="Home" to='/'>Home</NavLink>
+                <NavLink label="About Me" to='/aboutMe'>About Me</NavLink>
+                <NavLink label="Projects" to='/projects'> Projects</NavLink>
+                </nav>
+                {/* <NavLink label="CV"  />
+                <NavLink label="Contact Me" /> */}
             </Tabs>
         </Box>
     );
