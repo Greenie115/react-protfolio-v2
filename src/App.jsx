@@ -11,9 +11,9 @@ import CV from './components/pages/cv';
 function App() {
   return (
     <>
-      <NavBar />
     <Container>
       <Router>
+        <NavBar />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/aboutMe' element={<AboutMe />} />

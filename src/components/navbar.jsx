@@ -1,4 +1,5 @@
 import { AppBar, Toolbar, Typography, Stack, Button } from "@mui/material";
+import { NavLink } from "react-router-dom";
 
 
 function NavBar(){
@@ -9,11 +10,21 @@ function NavBar(){
                     Reach Portfolio
                 </Typography>
                 <Stack direction='row' spacing={2}>
-                <Button color='inherit'>Home</Button>
-                <Button color='inherit'>About Me</Button>
-                <Button color='inherit'>Projects</Button>
-                <Button color='inherit'>CV</Button>
-                <Button color='inherit'>Contact Me</Button>
+                <NavLink to='/'>
+                    <Button color='inherit'>Home</Button>
+                </NavLink>
+                <NavLink to='aboutMe'>
+                    <Button color='inherit'>About Me</Button>
+                </NavLink>
+                <NavLink to='projects'>
+                    <Button color='inherit'>Projects</Button>
+                </NavLink>
+                <NavLink to='cv'>
+                    <Button color='inherit'>CV</Button>
+                </NavLink>
+                <NavLink to='contactMe'>
+                    <Button color='inherit'>Contact Me</Button>
+                </NavLink>
                 </Stack>
             </Toolbar>
         </AppBar>
