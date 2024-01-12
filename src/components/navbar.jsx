@@ -4,10 +4,10 @@ import { NavLink } from "react-router-dom";
 
 function NavBar(){
     return(
-        <AppBar position='static'>
+        <AppBar position= 'fixed' spacing={2}>
             <Toolbar>
                 <Typography variant='h6' sx={{flexGrow: 1}}>
-                    Reach Portfolio
+                    React Portfolio
                 </Typography>
                 <Stack direction='row' spacing={2}>
                 <NavLink to='/'>

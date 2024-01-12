@@ -13,17 +13,17 @@ function App() {
     <>
     <Container>
       <Router>
-        <NavBar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/aboutMe' element={<AboutMe />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/contactMe' element={<ContactMe />} />
-          <Route path='/cv' element={<CV />} />
-        </Routes>
+          <NavBar />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/aboutMe' element={<AboutMe />} />
+            <Route path='/projects' element={<Projects />} />
+            <Route path='/contactMe' element={<ContactMe />} />
+            <Route path='/cv' element={<CV />} />
+          </Routes>
       </Router>
     </Container>
-    </>
+  </>
   )
 }
 
