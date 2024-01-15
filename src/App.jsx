@@ -13,7 +13,7 @@ function App() {
     <>
     <Container>
       <Router>
-          <NavBar />
+          <NavBar/>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/aboutMe' element={<AboutMe />} />

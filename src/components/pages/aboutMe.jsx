@@ -1,12 +1,39 @@
 import React from "react";
+import { Box, Typography, Paper } from "@mui/material"
+import SkillsAccordion from "./accordion";
 
-function AboutMe(){
-    return(
+function AboutMe() {
+    return (
         <>
-         <h1>About Me Component</h1>
-            <h2>another line</h2>
-            <h2>yet another line</h2>
-         </>
+            <Box sx={{
+                my: 10,
+                p: 3,
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center"
+            }}>
+                <Typography variant="h3">
+                    About me
+                </Typography>
+                <Paper elevation={3} sx={{
+                    m: 2,
+                    p: 10
+                }}>
+                    <Typography variant="p">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fugiat natus reprehenderit deleniti numquam aperiam quis ex iure animi voluptatem doloremque vitae veritatis dolorum eaque, illo quo consequatur incidunt consequuntur!                </Typography>
+                </Paper>
+                <Typography variant="h3">
+                    Skills
+                </Typography>
+                <Paper elevation={3} sx={{
+                    m: 2,
+                    p: 10
+                }}>
+                <SkillsAccordion/>
+                </Paper>
+            </Box>
+        </>
     )
 }
 
