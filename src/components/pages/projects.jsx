@@ -91,10 +91,7 @@ function Projects() {
                             }}>
                                 {project.description}
                             </Typography>
-                            <img src={project.IMG} alt="" sx={{
-                                heigh: 100,
-                                width: 100,
-                            }}/>
+                            <img src={project.IMG} alt="project-screenshot"/>
                             <Button variant="contained" sx={{
                                 m: 2
                             }}
