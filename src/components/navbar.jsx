@@ -4,26 +4,38 @@ import { NavLink } from "react-router-dom";
 
 function NavBar(){
     return(
-        <AppBar position= 'fixed' spacing={2}>
-            <Toolbar>
-                <Typography variant='h6' sx={{flexGrow: 1}}>
-                    React Portfolio
+        <AppBar position= 'fixed' spacing={2} sx={{
+            bgcolor: "secondary.main"
+        }}>
+            <Toolbar >
+                <Typography variant='h5' sx={{flexGrow: 1}}>
+                    Daniel Green
                 </Typography>
                 <Stack direction='row' spacing={2}>
                 <NavLink to='/'>
-                    <Button color='inherit'>Home</Button>
+                    <Button sx={{
+                        color: "white"
+                    }}>Home</Button>
                 </NavLink>
                 <NavLink to='aboutMe'>
-                    <Button color='inherit'>About Me</Button>
+                    <Button sx={{
+                        color: "white"
+                    }}>About Me</Button>
                 </NavLink>
                 <NavLink to='projects'>
-                    <Button color='inherit'>Projects</Button>
+                    <Button sx={{
+                        color: "white"
+                    }}>Projects</Button>
                 </NavLink>
                 <NavLink to='cv'>
-                    <Button color='inherit'>CV</Button>
+                    <Button sx={{
+                        color: "white"
+                    }}>CV</Button>
                 </NavLink>
                 <NavLink to='contactMe'>
-                    <Button color='inherit'>Contact Me</Button>
+                    <Button sx={{
+                        color: "white"
+                    }}>Contact Me</Button>
                 </NavLink>
                 </Stack>
             </Toolbar>

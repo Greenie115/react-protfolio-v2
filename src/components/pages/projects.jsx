@@ -79,7 +79,7 @@ function Projects() {
                     return (
                         <Paper key={project.id} square={false} elevation={4} sx={{
                             m: 2
-                             
+
                         }}>
                             <Typography variant="h5" sx={{
                                 m: 2
@@ -92,7 +92,8 @@ function Projects() {
                                 {project.description}
                             </Typography>
                             <img src={project.IMG} alt="" sx={{
-                                heigh: 10
+                                heigh: 100,
+                                width: 100,
                             }}/>
                             <Button variant="contained" sx={{
                                 m: 2
