@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Paper, Typography, Button  } from "@mui/material";
+import { Box, Paper, Typography, Button, Link  } from "@mui/material";
 
 const myProjects = [
     {
@@ -70,16 +70,18 @@ function Projects() {
                 mt: 2,
                 p: 3,
                 display: "flex",
-                flexDirection: "row",
+                flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center"
             }}>
-                <Box>
+                <Box> 
                 {myProjects.map((project) => {
                     return (
                         <Paper key={project.id} square={false} elevation={4} sx={{
-                            m: 2
-
+                            m: 2,
+                            p: 2,
+                            display: "flex",
+                            flexDirection: "column"
                         }}>
                             <Typography variant="h5" sx={{
                                 m: 2
@@ -91,11 +93,17 @@ function Projects() {
                             }}>
                                 {project.description}
                             </Typography>
-                            <img src={project.IMG} alt="project-screenshot"/>
-                            <Button variant="contained" sx={{
-                                m: 2
+                            <img src={project.IMG} alt="project-screenshot" width={500} height={300} sx={{
+                                m: 2,
+                                p:5
+                            }}/>
+                            <Button variant="contained"
+                                href={project.URL} 
+                                sx={{
+                                m: 2,
+                    
                             }}
-                            >Contained</Button>
+                            >Check It Out!</Button>
                         </Paper>
                     )
                 })}
