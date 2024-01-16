@@ -1,7 +1,26 @@
 import React from "react";
+import { useRef } from 'react'
 import { Grid, TextField, Button, Card, CardContent, Typography, Box } from '@mui/material'
+import emailjs from '@emailjs/browser';
 
 function ContactMe() {
+
+    const form = useRef()
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_ao0evsn', 'template_6qidspd', form.current, 'bleXIAnrfoXdXnLQE')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset();
+    };
+
+  
+
     return (
         <>
         <Box sx={{
@@ -34,7 +53,12 @@ function ContactMe() {
                                     <TextField label="Message" multiline rows={4} placeholder="Type your message here" variant="outlined" fullWidth required />
                                 </Grid>
                                 <Grid item xs={12}>
-                                    <Button type="submit" variant="contained" color="primary" fullWidth>Submit</Button>
+                                    <Button 
+                                    onSubmit={sendEmail}
+                                    type="submit" 
+                                    variant="contained" 
+                                    color="primary" 
+                                    fullWidth>Submit</Button>
                                 </Grid>
 
                             </Grid>
