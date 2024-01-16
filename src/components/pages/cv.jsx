@@ -27,6 +27,7 @@ function CV() {
                     }} href="Daniel Green Business Development CV.pdf"
                         target="_blank"
                         download="Daniel Green Business Development CV.pdf"
+                        fullWidth
                     >Download</Button>
                 </Paper>
             </Box>

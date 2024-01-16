@@ -81,7 +81,9 @@ function Projects() {
                             m: 2,
                             p: 2,
                             display: "flex",
-                            flexDirection: "column"
+                            flexDirection: "column",
+                            justifyContent: "center",
+                            alignItems: "center"
                         }}>
                             <Typography variant="h5" sx={{
                                 m: 2
@@ -97,7 +99,7 @@ function Projects() {
                                 m: 2,
                                 p:5
                             }}/>
-                            <Button variant="contained"
+                            <Button variant="contained" fullWidth
                                 href={project.URL} 
                                 sx={{
                                 m: 2,
