@@ -13,7 +13,7 @@ function Home() {
             }}>
                 <Avatar
                     alt="profile-img"
-                    src='.\src\assets\IMG-20220404-WA0001-cropped.jpg'
+                    src='./src/assets/images/IMG-20220404-WA0001-cropped.jpg'
                     sx={{ height: 200, width: 200, m: 5 }}
                 ></Avatar>
                 <Typography variant="h2">

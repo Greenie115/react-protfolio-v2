@@ -21,7 +21,7 @@ function CV() {
                     }}>
                         Check out my CV
                     </Typography>
-                    <img src="./src\assets\CVScreenshot.png" alt="cv-screenshot"></img>
+                    <img src="./src/assets/images/CVScreenshot.png" alt="cv-screenshot"></img>
                     <Button variant="contained" sx={{
                         mt: 2
                     }} href="Daniel Green Business Development CV.pdf"
