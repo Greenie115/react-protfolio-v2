@@ -13,7 +13,7 @@ function Home() {
             }}>
                 <Avatar
                     alt="profile-img"
-                    src='public/assets/images/img-20220404-wa0001-cropped.jpg'
+                    src='./react-protfolio-v2/img-20220404-wa0001-cropped.jpg'
                     sx={{ height: 200, width: 200, m: 5 }}
                 ></Avatar>
                 <Typography variant="h2">

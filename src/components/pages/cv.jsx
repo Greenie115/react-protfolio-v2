@@ -21,7 +21,7 @@ function CV() {
                     }}>
                         Check out my CV
                     </Typography>
-                    <img src="public/assets/images/cv-screenshot.png" alt="cv-screenshot"></img>
+                    <img src="./react-protfolio-v2/cv-screenshot.png" alt="cv-screenshot"></img>
                     <Button variant="contained" sx={{
                         mt: 2
                     }} href="Daniel Green Business Development CV.pdf"
