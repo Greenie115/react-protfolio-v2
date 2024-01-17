@@ -26,7 +26,7 @@ function CV() {
                         mt: 2
                     }} href="./react-protfolio-v2/Daniel Green Business Development CV.pdf"
                         target="_blank"
-                        download="Daniel Green Business Development CV.pdf"
+                        download="./react-protfolio-v2Daniel Green Business Development CV.pdf"
                         fullWidth
                     >Download</Button>
                 </Paper>
