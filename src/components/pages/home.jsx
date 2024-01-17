@@ -13,15 +13,12 @@ function Home() {
             }}>
                 <Avatar
                     alt="profile-img"
-                    src='./src/assets/images/IMG-20220404-WA0001-cropped.jpg'
+                    src='public/assets/images/img-20220404-wa0001-cropped.jpg'
                     sx={{ height: 200, width: 200, m: 5 }}
                 ></Avatar>
                 <Typography variant="h2">
                     Hey there! I'm Dan.         Frontend React Developer
                 </Typography>
-                {/* <Typography variant="h2">
-        Frontend React Developer
-        </Typography> */}
             </Box>
         </>
     )

@@ -7,7 +7,7 @@ const myProjects = [
         "name": "README Generator",
         "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
         "github": "https://github.com/Greenie115/readme-generator",
-        "IMG": "./src/assets/images/READMEGeneratorImg.png",
+        "IMG": "public/assets/images/readme-generator-img.png",
         "description": "Here's a README Generator"
     },
     {
@@ -15,7 +15,7 @@ const myProjects = [
         "name": "README Generator",
         "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
         "github": "https://github.com/Greenie115/readme-generator",
-        "IMG": "./src/assets/images/READMEGeneratorImg.png",
+        "IMG": "public/assets/images/readme-generator-img.png",
         "description": "Here's a README Generator"
     },
     {
@@ -23,7 +23,7 @@ const myProjects = [
         "name": "README Generator",
         "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
         "github": "https://github.com/Greenie115/readme-generator",
-        "IMG": "./src/assets/images/READMEGeneratorImg.png",
+        "IMG": "public/assets/images/readme-generator-img.png",
         "description": "Here's a README Generator"
     },
     {
@@ -31,7 +31,7 @@ const myProjects = [
         "name": "README Generator",
         "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
         "github": "https://github.com/Greenie115/readme-generator",
-        "IMG": "./src/assets/images/READMEGeneratorImg.png",
+        "IMG": "public/assets/images/readme-generator-img.png",
         "description": "Here's a README Generator"
     },
     {
@@ -39,7 +39,7 @@ const myProjects = [
         "name": "README Generator",
         "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
         "github": "https://github.com/Greenie115/readme-generator",
-        "IMG": "./src/assets/images/READMEGeneratorImg.png",
+        "IMG": "public/assets/images/readme-generator-img.png",
         "description": "Here's a README Generator"
     },
     {
@@ -47,7 +47,7 @@ const myProjects = [
         "name": "README Generator",
         "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
         "github": "https://github.com/Greenie115/readme-generator",
-        "IMG": "./src/assets/images/READMEGeneratorImg.png",
+        "IMG": "public/assets/images/readme-generator-img.png",
         "description": "Here's a README Generator"
     }
 ]
