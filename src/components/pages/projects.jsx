@@ -1,118 +1,88 @@
 import React from "react";
-import { Box, Paper, Typography, Button, Link  } from "@mui/material";
+import { Box, Paper, Typography, Button, Grid, Link } from "@mui/material";
 
 const myProjects = [
+
     {
         "id": "1",
         "name": "README Generator",
         "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
         "github": "https://github.com/Greenie115/readme-generator",
-        "IMG": "./react-protfolio-v2/readme-generator-img.png",
+        "IMG": "./react-portfolio-v2/readme-generator-img.png",
         "description": "Here's a README Generator"
     },
     {
-        "id": "2",
+        "id": "1",
         "name": "README Generator",
         "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
         "github": "https://github.com/Greenie115/readme-generator",
-        "IMG": "./react-protfolio-v2/readme-generator-img.png",
+        "IMG": "./react-portfolio-v2/readme-generator-img.png",
         "description": "Here's a README Generator"
     },
     {
-        "id": "3",
+        "id": "1",
         "name": "README Generator",
         "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
         "github": "https://github.com/Greenie115/readme-generator",
-        "IMG": "./react-protfolio-v2/readme-generator-img.png",
+        "IMG": "./react-portfolio-v2/readme-generator-img.png",
         "description": "Here's a README Generator"
     },
     {
-        "id": "4",
+        "id": "1",
         "name": "README Generator",
         "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
         "github": "https://github.com/Greenie115/readme-generator",
-        "IMG": "./react-protfolio-v2/readme-generator-img.png",
+        "IMG": "./react-portfolio-v2/readme-generator-img.png",
         "description": "Here's a README Generator"
     },
-    {
-        "id": "5",
-        "name": "README Generator",
-        "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
-        "github": "https://github.com/Greenie115/readme-generator",
-        "IMG": "./react-protfolio-v2/readme-generator-img.png",
-        "description": "Here's a README Generator"
-    },
-    {
-        "id": "6",
-        "name": "README Generator",
-        "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
-        "github": "https://github.com/Greenie115/readme-generator",
-        "IMG": "./react-protfolio-v2/readme-generator-img.png",
-        "description": "Here's a README Generator"
-    }
-]
+
+];
 
 function Projects() {
     return (
         <>
-            <Typography variant="h3"
-                sx={{
-                    mt: 9,
-                    p: 2,
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "center",
-                    alignItems: "center"
-                }}>
-                Projects
-            </Typography>
-            <Box sx={{
-                mt: 2,
-                p: 3,
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center"
+            <Typography variant="h3" sx={{
+                mt: 9,
+                mb: 4,
+                textAlign: "center"
             }}>
-                <Box> 
-                {myProjects.map((project) => {
-                    return (
-                        <Paper key={project.id} square={false} elevation={4} sx={{
-                            m: 2,
-                            p: 2,
+                My Projects
+            </Typography>
+            <Grid container spacing={4} sx={{ px: 3, justifyContent: "center" }}>
+                {myProjects.map((project) => (
+                    <Grid item xs={12} sm={6} md={4} key={project.id}>
+                        <Paper elevation={4} sx={{
                             display: "flex",
                             flexDirection: "column",
-                            justifyContent: "center",
-                            alignItems: "center"
+                            alignItems: "center",
+                            p: 2,
                         }}>
-                            <Typography variant="h5" sx={{
-                                m: 2
-                            }}>
+                            <Typography variant="h5" sx={{ mb: 2 }}>
                                 {project.name}
                             </Typography>
-                            <Typography variant="h6" sx={{
-                                m: 2
-                            }}>
+                            <img src={project.IMG} alt="project-screenshot" style={{
+                                width: '100%', 
+                                height: 'auto',
+                                maxWidth: '500px', 
+                                borderRadius: '4px', 
+                            }}/>
+                            <Typography variant="body1" sx={{ mt: 2, textAlign: 'center' }}>
                                 {project.description}
                             </Typography>
-                            <img src={project.IMG} alt="project-screenshot" width={500} height={300} sx={{
-                                m: 2,
-                                p:5
-                            }}/>
-                            <Button variant="contained" fullWidth
-                                href={project.URL} 
-                                sx={{
-                                m: 2,
-                    
-                            }}
-                            >Check It Out!</Button>
+                            <Box sx={{ mt: 2, width: '100%' }}>
+                                <Button variant="contained" color="primary" href={project.URL} sx={{ mr: 1 }}>
+                                    Demo
+                                </Button>
+                                <Button variant="outlined" href={project.github}>
+                                    GitHub
+                                </Button>
+                            </Box>
                         </Paper>
-                    )
-                })}
-                </Box>
-            </Box>
+                    </Grid>
+                ))}
+            </Grid>
         </>
-    )
+    );
 }
 
-export default Projects; 
+export default Projects;
