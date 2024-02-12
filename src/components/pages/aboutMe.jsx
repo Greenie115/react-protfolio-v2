@@ -11,7 +11,8 @@ function AboutMe() {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
-                justifyContent: "center"
+                justifyContent: "center",
+                bgcolor: "grey"
             }}>
                 <Typography variant="h3">
                     About me

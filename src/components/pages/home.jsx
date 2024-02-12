@@ -1,12 +1,15 @@
 import React from "react";
+import AboutMe from "./aboutMe";
 import { Box, Avatar, Typography, Grid, Paper, Button } from "@mui/material";
 import reactLogo from "../../../public/React-logo-removebg-preview.png";
 import jsLogo from "../../../public/JavaScript-logo.png";
 import tailwindLogo from "../../../public/tailwind-logo.png";
 import HTMLLogo from "../../../public/HTML5_logo.png";
 import CSSLogo from "../../../public/CSS3_logo.png";
+import ProfileImg from "../../../public/img-20220404-wa0001-cropped.jpg"
+import Projects from "./projects";
+import Footer from "../Footer";
 
-// Assuming you have a more detailed array of technologies with descriptions
 const technologies = [
   { name: "React", logo: reactLogo, description: "I've built multiple SPA with React, utilizing hooks and context for state management." },
   { name: "JavaScript", logo: jsLogo, description: "Experienced in ES6+ features, asynchronous programming, and performance optimization." },
@@ -25,11 +28,11 @@ function Home() {
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
-                bgcolor: '#f5f5f5', // A light background color for better contrast and readability
+                bgcolor: '#f5f5f5', 
             }}>
                 <Avatar
                     alt="profile-img"
-                    src='./react-portfolio-v2/img-20220404-wa0001-cropped.jpg'
+                    src={ProfileImg}
                     sx={{ height: 200, width: 200, m: 5 }}
                 />
                 <Typography variant="h3" sx={{ color: '#333', fontWeight: 'bold' }}>
@@ -64,6 +67,8 @@ function Home() {
                     </Grid>
                 ))}
             </Grid>
+            <AboutMe />
+            <Projects />
         </>
     );
 }

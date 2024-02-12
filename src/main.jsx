@@ -4,6 +4,7 @@ import App from './App.jsx'
 import { createTheme, ThemeProvider } from '@mui/material'
 
 const theme = createTheme({
+
   palette: {
     primary: {
       main: "#0766AD"

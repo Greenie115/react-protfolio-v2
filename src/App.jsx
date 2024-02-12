@@ -6,6 +6,7 @@ import AboutMe from './components/pages/aboutMe'
 import Projects from './components/pages/projects'
 import ContactMe from './components/pages/contactMe'
 import CV from './components/pages/cv';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           </Routes>
       </Router>
     </Container>
+    <Footer/>
   </>
   )
 }
