@@ -70,7 +70,7 @@ function Projects() {
                                 {project.description}
                             </Typography>
                             <Box sx={{ mt: 2, width: '100%' }}>
-                                <Button variant="contained" color="primary" href={project.URL} sx={{ mr: 1 }}>
+                                <Button variant="contained" color='primary' href={project.URL} sx={{ mr: 1 }}>
                                     Demo
                                 </Button>
                                 <Button variant="outlined" href={project.github}>

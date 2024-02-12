@@ -23,15 +23,15 @@ function NavBar() {
     ];
 
     return (
-        <AppBar position="fixed" sx={{ bgcolor: "secondary.main" }}>
+        <AppBar position="fixed" sx={{ bgcolor: "primary.main" }}>
             <Toolbar>
-                <Typography variant="h5" sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}>
+                <Typography variant="h5" sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, color: "white"}}>
                     Daniel Green
                 </Typography>
                 <IconButton
                     size="large"
                     aria-label="account of current user"
-                    aria-controls="menu-appbar"
+                    aria-controls="menu-appBar"
                     aria-haspopup="true"
                     onClick={handleOpenNavMenu}
                     color="inherit"

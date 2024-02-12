@@ -12,7 +12,9 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-    <Container>
+    <Container sx={{
+      bgcolor: "primary.dark"
+    }}>
       <Router>
           <NavBar/>
           <Routes>
