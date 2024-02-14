@@ -28,8 +28,6 @@ function Home() {
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
-                bgcolor: '#f5f5f5',
-                // background: 'linear-gradient(45deg, #DAFFFB 30%, #64CCC5 90%)'
             }}>
                 <motion.div whileHover={{ scale: 1.1 }}>
                     <Avatar

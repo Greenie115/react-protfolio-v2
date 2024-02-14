@@ -23,10 +23,11 @@ function CV() {
                     </Typography>
                     <img src="./react-protfolio-v2/cv-screenshot.png" alt="cv-screenshot"></img>
                     <Button variant="contained" sx={{
-                        mt: 2
-                    }} href="./react-protfolio-v2/Daniel Green Business Development CV.pdf"
+                        mt: 2,
+                        color: 'white'
+                    }} href="./react-protfolio-v2/Frontend Developer Daniel Green (1).pdf"
                         target="_blank"
-                        download="./react-protfolio-v2Daniel Green Business Development CV.pdf"
+                        download="./react-protfolio-v2/Frontend Developer Daniel Green (1).pdf"
                         fullWidth
                     >Download</Button>
                 </Paper>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Container, Typography, Grid, Link, IconButton } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 function Footer() {
     return (
@@ -12,19 +13,19 @@ function Footer() {
                         <Typography variant="body1">Daniel Green © {new Date().getFullYear()}</Typography>
                     </Grid>
                     <Grid item>
-                        <Link href="https://github.com/" color="inherit" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://github.com/Greenie115" color="inherit" target="_blank" rel="noopener noreferrer">
                             <IconButton color="inherit">
                                 <GitHubIcon />
                             </IconButton>
                         </Link>
-                        <Link href="https://linkedin.com/" color="inherit" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://www.linkedin.com/in/daniel-green545/" color="inherit" target="_blank" rel="noopener noreferrer">
                             <IconButton color="inherit">
                                 <LinkedInIcon />
                             </IconButton>
                         </Link>
-                        <Link href="https://linkedin.com/" color="inherit" target="_blank" rel="noopener noreferrer">
+                        <Link href="dggreen545@gmail.com" color="inherit" target="_blank" rel="noopener noreferrer">
                             <IconButton color="inherit">
-                                <LinkedInIcon />
+                                <MailOutlineIcon />
                             </IconButton>
                         </Link>
                     </Grid>

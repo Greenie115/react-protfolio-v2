@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Paper, Typography, Button, Grid } from "@mui/material";
+import { motion } from 'framer-motion';
 
 const myProjects = [
 
@@ -12,7 +13,7 @@ const myProjects = [
         "description": "Here's a README Generator"
     },
     {
-        "id": "1",
+        "id": "2",
         "name": "README Generator",
         "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
         "github": "https://github.com/Greenie115/readme-generator",
@@ -20,7 +21,7 @@ const myProjects = [
         "description": "Here's a README Generator"
     },
     {
-        "id": "1",
+        "id": "3",
         "name": "README Generator",
         "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
         "github": "https://github.com/Greenie115/readme-generator",
@@ -28,7 +29,23 @@ const myProjects = [
         "description": "Here's a README Generator"
     },
     {
-        "id": "1",
+        "id": "4",
+        "name": "README Generator",
+        "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
+        "github": "https://github.com/Greenie115/readme-generator",
+        "IMG": "./react-portfolio-v2/readme-generator-img.png",
+        "description": "Here's a README Generator"
+    },
+    {
+        "id": "5",
+        "name": "README Generator",
+        "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
+        "github": "https://github.com/Greenie115/readme-generator",
+        "IMG": "./react-portfolio-v2/readme-generator-img.png",
+        "description": "Here's a README Generator"
+    },
+    {
+        "id": "6",
         "name": "README Generator",
         "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
         "github": "https://github.com/Greenie115/readme-generator",
@@ -44,13 +61,15 @@ function Projects() {
             <Typography variant="h3" sx={{
                 mt: 9,
                 mb: 4,
-                textAlign: "center"
+                textAlign: "center",
+                color: 'white'
             }}>
                 My Projects
             </Typography>
             <Grid container spacing={4} sx={{ px: 3, justifyContent: "center" }}>
                 {myProjects.map((project) => (
                     <Grid item xs={12} sm={6} md={4} key={project.id}>
+                        <motion.div whileHover={{ scale: 1.05 }}>
                         <Paper elevation={4} sx={{
                             display: "flex",
                             flexDirection: "column",
@@ -70,7 +89,7 @@ function Projects() {
                                 {project.description}
                             </Typography>
                             <Box sx={{ mt: 2, width: '100%' }}>
-                                <Button variant="contained" color='primary' href={project.URL} sx={{ mr: 1 }}>
+                                <Button variant="contained" color='primary' href={project.URL} sx={{ mr: 1, color: 'white'}}>
                                     Demo
                                 </Button>
                                 <Button variant="outlined" href={project.github}>
@@ -78,7 +97,8 @@ function Projects() {
                                 </Button>
                             </Box>
                         </Paper>
-                    </Grid>
+                    </motion.div>
+                 </Grid>
                 ))}
             </Grid>
         </>
