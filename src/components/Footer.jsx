@@ -22,6 +22,11 @@ function Footer() {
                                 <LinkedInIcon />
                             </IconButton>
                         </Link>
+                        <Link href="https://linkedin.com/" color="inherit" target="_blank" rel="noopener noreferrer">
+                            <IconButton color="inherit">
+                                <LinkedInIcon />
+                            </IconButton>
+                        </Link>
                     </Grid>
                 </Grid>
                 <Typography variant="body2" align="center" sx={{ pt: 3 }}>

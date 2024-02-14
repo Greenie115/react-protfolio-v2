@@ -12,13 +12,11 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-    <Container sx={{
-      bgcolor: "primary.dark"
-    }}>
+    <Container >
       <Router>
           <NavBar/>
           <Routes>
-            <Route path='/' element={<Home />} />
+            <Route path='/react-protfolio-v2' element={<Home />} />
             <Route path='/aboutMe' element={<AboutMe />} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/contactMe' element={<ContactMe />} />

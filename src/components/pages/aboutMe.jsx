@@ -6,14 +6,15 @@ function AboutMe() {
     return (
         <>
             <Box sx={{
-                my: 10,
+                my: 20,
                 p: 3,
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
-                bgcolor: "grey"
+                bgcolor: '#f5f5f5', 
             }}>
+
                 <Typography variant="h3">
                     About me
                 </Typography>
