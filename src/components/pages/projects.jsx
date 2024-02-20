@@ -1,23 +1,25 @@
 import React from "react";
 import { Box, Paper, Typography, Button, Grid } from "@mui/material";
 import { motion } from 'framer-motion';
+import CC_IMG from '../../../public/homepage.png'
+import INVEST_IMG from '../../../public/investment-calc.png'
 
 const myProjects = [
 
     {
         "id": "1",
-        "name": "README Generator",
-        "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
-        "github": "https://github.com/Greenie115/readme-generator",
-        "IMG": "./react-portfolio-v2/readme-generator-img.png",
-        "description": "Here's a README Generator"
+        "name": "Culinary Compass",
+        "URL": "https://culinary-compasses.netlify.app/",
+        "github": "https://github.com/Chae-Lee/Culinary_Compass",
+        "IMG": CC_IMG,
+        "description": "Group project for users to find Michelin Star restaurants near them"
     },
     {
         "id": "2",
-        "name": "README Generator",
-        "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
-        "github": "https://github.com/Greenie115/readme-generator",
-        "IMG": "./react-portfolio-v2/readme-generator-img.png",
+        "name": "Investment Calculator",
+        "URL": "https://github.com/Greenie115/investment-calculator",
+        "github": "https://github.com/Greenie115/investment-calculatorr",
+        "IMG": INVEST_IMG,
         "description": "Here's a README Generator"
     },
     {
@@ -81,9 +83,10 @@ function Projects() {
                             </Typography>
                             <img src={project.IMG} alt="project-screenshot" style={{
                                 width: '100%', 
-                                height: 'auto',
+                                height: '250px',
                                 maxWidth: '500px', 
-                                borderRadius: '4px', 
+                                borderRadius: '4px',
+                                 
                             }}/>
                             <Typography variant="body1" sx={{ mt: 2, textAlign: 'center' }}>
                                 {project.description}

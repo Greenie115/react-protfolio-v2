@@ -15,7 +15,7 @@ function NavBar() {
     };
 
     const navItems = [
-        { label: 'Home', path: '/' },
+        { label: 'Home', path: '/react-protfolio-v2' },
         { label: 'About Me', path: '/aboutMe' },
         { label: 'Projects', path: '/projects' },
         { label: 'CV', path: '/cv' },

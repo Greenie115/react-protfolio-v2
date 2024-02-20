@@ -1,14 +1,14 @@
+import { Box, Avatar, Typography, Grid, Paper, Divider } from "@mui/material";
+import { motion } from 'framer-motion';
 import React from "react";
 import AboutMe from "./aboutMe";
 import Projects from "./projects";
-import { Box, Avatar, Typography, Grid, Paper, Divider } from "@mui/material";
 import reactLogo from "../../../public/React-logo-removebg-preview.png";
 import jsLogo from "../../../public/JavaScript-logo.png";
 import tailwindLogo from "../../../public/tailwind-logo.png";
 import HTMLLogo from "../../../public/HTML5_logo.png";
 import CSSLogo from "../../../public/CSS3_logo.png";
 import ProfileImg from "../../../public/img-20220404-wa0001-cropped.jpg";
-import { motion } from 'framer-motion';
 
 const technologies = [
     { name: "React", logo: reactLogo, description: "Built multiple SPA with React, utilizing hooks and context for state management." },
@@ -36,7 +36,7 @@ function Home() {
                         sx={{ height: 200, width: 200, m: 5 }}
                     />
                 </motion.div>
-                <Typography variant="h3" sx={{ color: '#333', fontWeight: 'bold' }}>
+                <Typography variant="h3" sx={{ color: '#white', fontWeight: 'bold' }}>
                     Hey there! I'm Dan.
                 </Typography>
                 <Typography variant="h4" sx={{ color: '#555' }}>

@@ -53,7 +53,7 @@ function ContactMe() {
                                     <TextField label="Message" multiline rows={4} placeholder="Type your message here" variant="outlined" fullWidth required />
                                 </Grid>
                                 <Grid item xs={12}>
-                                    <Button 
+                                    <Button sx={{ color: 'white'}}
                                     onSubmit={sendEmail}
                                     type="submit" 
                                     variant="contained" 
