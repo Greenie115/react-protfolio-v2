@@ -3,6 +3,7 @@ import { Box, Paper, Typography, Button, Grid } from "@mui/material";
 import { motion } from 'framer-motion';
 import CC_IMG from '../../../public/homepage.png'
 import INVEST_IMG from '../../../public/investment-calc.png'
+import TTT_REACT from '../../../public/ttt-react.png'
 
 const myProjects = [
 
@@ -20,15 +21,15 @@ const myProjects = [
         "URL": "https://github.com/Greenie115/investment-calculator",
         "github": "https://github.com/Greenie115/investment-calculatorr",
         "IMG": INVEST_IMG,
-        "description": "Here's a README Generator"
+        "description": "SPA build in React for a simple way to show compounding interest"
     },
     {
         "id": "3",
-        "name": "README Generator",
-        "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
-        "github": "https://github.com/Greenie115/readme-generator",
-        "IMG": "./react-portfolio-v2/readme-generator-img.png",
-        "description": "Here's a README Generator"
+        "name": "Tic-Tak-Toe",
+        "URL": "https://ttt-react-daniel-green.netlify.app/",
+        "github": "https://github.com/Greenie115/tik-tac-toe-react",
+        "IMG": TTT_REACT,
+        "description": "A fun example of React best practices all in one application"
     },
     {
         "id": "4",

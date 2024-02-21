@@ -22,9 +22,9 @@ function AboutMe() {
                     m: 2,
                     p: 10
                 }}>
-                    <Typography variant="p"
+                    <Typography variant="h5"
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fugiat natus reprehenderit deleniti numquam aperiam quis ex iure animi voluptatem doloremque vitae veritatis dolorum eaque, illo quo consequatur incidunt consequuntur!                </Typography>
+                    I'm Daniel Green, a Frontend Developer with expertise in JavaScript, CSS, HTML, React, and Node.js. My career pivot through a focused 4-month boot camp showcases my adaptability and dedication to mastering new technologies. With a knack for problem-solving and a commitment to innovation, I'm passionate about using my skills to create meaningful tech solutions.</Typography>
                 </Paper>
             </Box>
         </>
