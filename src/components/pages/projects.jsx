@@ -4,6 +4,9 @@ import { motion } from 'framer-motion';
 import CC_IMG from '../../../public/homepage.png'
 import INVEST_IMG from '../../../public/investment-calc.png'
 import TTT_REACT from '../../../public/ttt-react.png'
+import README_IMG from '../../../public/readme-generator-img.png'
+import PASSWORD_IMG from "../../../public/random-password-gen.png"
+import LOADING_LOGO from '../../../public/loading-logo.jpg'
 
 const myProjects = [
 
@@ -36,24 +39,24 @@ const myProjects = [
         "name": "README Generator",
         "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
         "github": "https://github.com/Greenie115/readme-generator",
-        "IMG": "./react-portfolio-v2/readme-generator-img.png",
-        "description": "Here's a README Generator"
+        "IMG": README_IMG,
+        "description": "CLI application using Node.js to build a dynamic README.md file"
     },
     {
         "id": "5",
-        "name": "README Generator",
-        "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
-        "github": "https://github.com/Greenie115/readme-generator",
-        "IMG": "./react-portfolio-v2/readme-generator-img.png",
-        "description": "Here's a README Generator"
+        "name": "Random Password Generator",
+        "URL": "https://password-generator-daniel-green.netlify.app/",
+        "github": "https://github.com/Greenie115/password-generator",
+        "IMG": PASSWORD_IMG,
+        "description": "A random password generator that lets you build secure passwords based user input"
     },
     {
         "id": "6",
-        "name": "README Generator",
-        "URL": "https://www.youtube.com/watch?v=S72KH97pHwM",
-        "github": "https://github.com/Greenie115/readme-generator",
-        "IMG": "./react-portfolio-v2/readme-generator-img.png",
-        "description": "Here's a README Generator"
+        "name": "Coming Soon...",
+        "URL": "",
+        "github": "",
+        "IMG": LOADING_LOGO,
+        "description": "Coming Soon..."
     },
 
 ];
